@@ -2,12 +2,11 @@ import React from "react"
 import MovieCard from "./MovieCard"
 import { WatchListContext } from "../App"
 export default function MovieData({ id }) {
-    console.log(id)
     const { watchList } = React.useContext(WatchListContext)
     const onlyIDs = watchList.map(ele => ele.imdbID)
     const [movie, setMovie] = React.useState({})
     React.useEffect(() => {
-        fetch(`http://www.omdbapi.com/?apikey=${import.meta.env.VITE_API_KEY}&i=${id}`)
+        fetch(`https://www.omdbapi.com/?apikey=${import.meta.env.VITE_API_KEY}&i=${id}`)
             .then(res => res.json())
             .then(data => setMovie({ ...data, Runtime: data.Runtime.split(" ").join("") }))
     }, [])

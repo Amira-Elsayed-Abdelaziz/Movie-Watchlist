@@ -5,7 +5,6 @@ import React from "react"
 export default function MovieCard({ movie, addOrRemove }) {
 
     const {setWatchList } = React.useContext(WatchListContext)
-    console.log(movie)
     function addToWatchList() {
         setWatchList(prev => [...prev, movie])
     }

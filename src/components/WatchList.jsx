@@ -6,7 +6,6 @@ import MovieCard from "./MovieCard"
 import { Link } from "react-router-dom"
 export default function WatchList() {
     const { watchList } = React.useContext(WatchListContext)
-    console.log(watchList)
     return (
         <section className="watchlist">
             {watchList.length == 0 ?

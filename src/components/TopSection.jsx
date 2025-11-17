@@ -3,7 +3,6 @@ import { Link, Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 export default function TopSection() {
     const location = useLocation()
-    console.log(location.pathname)
     return (<>
         <header>
             <h1>{location.pathname == "/" ? "Find your film" : "My Watchlist"}</h1>

@@ -66,7 +66,8 @@ header a {
   border-left: 1px solid rgba(209, 213, 219, 1);
 }
 
-.result, .watchlist{
+.result,
+.watchlist {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,13 +75,20 @@ header a {
 
 
 }
+.result>svg
+{
+  margin: 2% 0;
+  color: rgba(223, 221, 221, 1);
+  width: 10%;
+  height: 10%; 
+}
 
 .result>span>svg {
   margin: 100% 0 0 0;
   color: rgba(223, 221, 221, 1);
   width: 100px;
   height: 100px;
-  /* background-color: red; */
+
 }
 
 .result h2 {
@@ -90,19 +98,19 @@ header a {
 .movie-card {
   display: flex;
   width: 80%;
+  max-width: 600px;
   height: 150px;
-  margin: 5% 10%;
+  margin: 30px ;
   justify-content: space-between;
-  /* text-overflow: ellipsis; */
   gap: 10px;
-  /* border: 1px solid black; */
+
 }
 
 .movie-card .card-poster {
   height: 100%;
   width: 30%;
   max-width: 120px;
-  /* border: 1px solid black; */
+ 
 }
 
 .movie-card img {
@@ -110,14 +118,13 @@ header a {
   height: 100%;
   width: 100%;
   border-radius: 5%;
-  /* border: 1px solid black; */
+
 }
 
 .card-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* flex-grow: ; */
   width: 70%;
 
 }
@@ -162,7 +169,8 @@ header a {
 
 }
 
-.movie-card .card-details button ,.no-watchlist .add-btn a {
+.movie-card .card-details button,
+.no-watchlist .add-btn a {
   display: flex;
   border: none;
   background-color: transparent;
@@ -170,19 +178,17 @@ header a {
   font-weight: 800;
   text-decoration: none;
   color: rgba(17, 24, 39, 1);
-    width: 50%;
-    align-items: center;
+  width: 50%;
+  align-items: center;
 
 }
-
 
 .movie-card .card-details .add-btn:hover {
-
   border-bottom: 1px solid rgba(17, 24, 39, 1);
-
 }
 
-.movie-card .card-details .add-btn svg ,.no-watchlist svg{
+.movie-card .card-details .add-btn svg,
+.no-watchlist svg {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -193,35 +199,20 @@ header a {
   padding: 5px;
 }
 
-/* 
-.watchlist{
- 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- color: rgba(223, 221, 221, 1);
- height: 100%;
- margin :auto 0;
-} */
-
 .no-watchlist {
   color: rgba(223, 221, 221, 1);
-  margin: auto 0;
-  height : 100%;
-  margin: 20% 0;
-  width:95%;
+  height: 100%;
+  margin: 10% 0;
   text-align: center;
-  /* background-color: red; */
+
 }
-.no-watchlist .add-btn a
-{
+
+.no-watchlist .add-btn a {
 
   display: flex;
   align-items: center;
-justify-content: center;
-width: 100%;
-  /* background-color: yellow; */
-margin-top: 3%;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3%;
 
 }
